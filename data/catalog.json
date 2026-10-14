@@ -1,0 +1,8 @@
+{
+  "ficha_productos": {"categoria": "producto", "tags": ["pack x20", "pack x50", "precios", "60x90", "absorción", "embalaje"]},
+  "politicas_comerciales": {"categoria": "comercial", "tags": ["descuentos", "envíos", "medios de pago", "devoluciones", "pedido mínimo"]},
+  "empresa_genpet": {"categoria": "empresa", "tags": ["historia", "equipo", "depósito", "producción", "hitos"]},
+  "plan_comercial_2026": {"categoria": "estrategia", "tags": ["objetivos", "metas", "trimestres", "Q4", "riesgos"]},
+  "historial_ventas_2026": {"categoria": "ventas", "tags": ["ventas mensuales", "trimestres", "productos", "canales", "top clientes"]},
+  "resultados_financieros_2026": {"categoria": "finanzas", "tags": ["ganancias", "costos", "margen", "resultado", "trimestres"]}
+}

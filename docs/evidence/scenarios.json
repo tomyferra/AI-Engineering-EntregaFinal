@@ -1,0 +1,146 @@
+{
+  "rag": {
+    "scenario": "rag",
+    "seconds": 28.2,
+    "job_id": "bb921ee17bbb4559b9c597cb6f2b295b",
+    "conversation_id": "e869003b000647d9b9b714e46ffd23bd",
+    "status": "DONE",
+    "query": "¿Qué descuento tiene un distribuidor, cuál es el pedido mínimo y cuánto tarda un envío a CABA?",
+    "created_at": "2026-10-14T16:35:23.761+00:00",
+    "updated_at": "2026-10-14T16:35:50.557+00:00",
+    "started_at": "2026-10-14T16:35:23.763+00:00",
+    "finished_at": "2026-10-14T16:35:50.557+00:00",
+    "pending_action": null,
+    "approval_request": null,
+    "approval": null,
+    "action_result": null,
+    "final_answer": "El descuento comercial para un distribuidor es del 15%, el pedido mínimo requerido es de 20 packs por pedido y el tiempo estimado de entrega a CABA es de 24 a 48 horas hábiles.\n\n* Descuento comercial fijo sobre el precio de lista para un distribuidor: 15%\n* Pedido mínimo para un distribuidor: 20 packs por pedido\n* Tiempo estimado de entrega para un envío a CABA: 24 a 48 horas hábiles\n\nFuentes: politicas_comerciales.md",
+    "delegations": 1,
+    "flow": [
+      "investigador",
+      "sintetizador"
+    ],
+    "error": null
+  },
+  "calculo": {
+    "scenario": "calculo",
+    "seconds": 34.2,
+    "job_id": "258836b7a21f440eba3c3b5d5360c63e",
+    "conversation_id": "d6fed9299ff040bda5690ca92d21111d",
+    "status": "DONE",
+    "query": "¿Cuánto crecieron porcentualmente los ingresos netos del Q1 al Q2 y del Q2 al Q3 de 2026?",
+    "created_at": "2026-10-14T16:35:51.979+00:00",
+    "updated_at": "2026-10-14T16:36:25.732+00:00",
+    "started_at": "2026-10-14T16:35:51.981+00:00",
+    "finished_at": "2026-10-14T16:36:25.732+00:00",
+    "pending_action": null,
+    "approval_request": null,
+    "approval": null,
+    "action_result": null,
+    "final_answer": "Los ingresos netos de GenPet crecieron un 79,14% del Q1 al Q2 de 2026 y un 81,58% del Q2 al Q3 de 2026.\n\n* Crecimiento porcentual del Q1 al Q2 de 2026: 79,14% (sobre los ingresos netos de $4.427.580 en el Q1 y $7.931.680 en el Q2).\n* Crecimiento porcentual del Q2 al Q3 de 2026: 81,58% (sobre los ingresos netos de $7.931.680 en el Q2 y $14.402.182 en el Q3).\n\nFuentes: resultados_financieros_2026.md",
+    "delegations": 2,
+    "flow": [
+      "investigador",
+      "analista",
+      "sintetizador"
+    ],
+    "error": null
+  },
+  "metas": {
+    "scenario": "metas",
+    "seconds": 44.3,
+    "job_id": "20ff61d81d3946ae9d2a631017815cd0",
+    "conversation_id": "d1e83655873244a68aedc8772c16ca1f",
+    "status": "DONE",
+    "query": "¿Se cumplieron las metas trimestrales de ingresos netos del plan comercial en Q1, Q2 y Q3? ¿Cuánto falta facturar en el Q4 para llegar al objetivo anual?",
+    "created_at": "2026-10-14T16:36:26.181+00:00",
+    "updated_at": "2026-10-14T16:37:09.095+00:00",
+    "started_at": "2026-10-14T16:36:26.183+00:00",
+    "finished_at": "2026-10-14T16:37:09.095+00:00",
+    "pending_action": null,
+    "approval_request": null,
+    "approval": null,
+    "action_result": null,
+    "final_answer": "Sí, se cumplieron y superaron las metas trimestrales en Q1, Q2 y Q3, y faltan facturar $9.238.558 en el Q4 para alcanzar el objetivo anual.\n\n* **Q1:** Meta de $4.000.000 frente a un real de $4.427.580 (110,69% de cumplimiento).\n* **Q2:** Meta de $7.500.000 frente a un real de $7.931.680 (105,76% de cumplimiento).\n* **Q3:** Meta de $12.000.000 frente a un real de $14.402.182 (120,02% de cumplimiento).\n* **Acumulado Q1-Q3:** $26.761.442.\n* **Falta facturar en Q4 para el objetivo anual:** $9.238.558 (con relación a la meta anual de superar los $36.000.000).\n\nFuentes: plan_comercial_2026.md, resultados_financieros_2026.md",
+    "delegations": 2,
+    "flow": [
+      "investigador",
+      "analista",
+      "sintetizador"
+    ],
+    "error": null
+  },
+  "repregunta": {
+    "scenario": "repregunta",
+    "seconds": 38.3,
+    "job_id": "894cfa2bea574279b36ea281ae713776",
+    "conversation_id": "d6fed9299ff040bda5690ca92d21111d",
+    "status": "DONE",
+    "query": "¿Y cómo evolucionó la ganancia neta en esos mismos trimestres?",
+    "created_at": "2026-10-14T16:37:39.766+00:00",
+    "updated_at": "2026-10-14T16:38:16.309+00:00",
+    "started_at": "2026-10-14T16:37:39.768+00:00",
+    "finished_at": "2026-10-14T16:38:16.309+00:00",
+    "pending_action": null,
+    "approval_request": null,
+    "approval": null,
+    "action_result": null,
+    "final_answer": "La ganancia neta de GenPet creció un 657,49% del Q1 al Q2 de 2026 y un 208,82% del Q2 al Q3 de 2026.\n\n* Crecimiento porcentual del Q1 al Q2 de 2026: 657,49% (sobre la ganancia neta de $164.025 en el Q1 y $1.242.479 en el Q2).\n* Crecimiento porcentual del Q2 al Q3 de 2026: 208,82% (sobre la ganancia neta de $1.242.479 en el Q2 y $3.837.051 en el Q3).\n\nFuentes: resultados_financieros_2026.md",
+    "delegations": 2,
+    "flow": [
+      "investigador",
+      "analista",
+      "sintetizador"
+    ],
+    "error": null
+  },
+  "hitl": {
+    "scenario": "hitl",
+    "seconds": 44.3,
+    "job_id": "9ee13cc5c4e5470f954047334c38cfc9",
+    "conversation_id": "a93d34dfaa9d473fb7e2dd7606b82906",
+    "status": "DONE",
+    "query": "Prepará un resumen de las ventas por canal de 2026 y enviá el informe a direccion@genpet.com.ar",
+    "created_at": "2026-10-14T16:38:18.024+00:00",
+    "updated_at": "2026-10-14T16:39:00.288+00:00",
+    "started_at": "2026-10-14T16:39:00.266+00:00",
+    "finished_at": "2026-10-14T16:39:00.288+00:00",
+    "pending_action": {
+      "type": "enviar_informe",
+      "recipient": "direccion@genpet.com.ar",
+      "reason": "La consulta pide enviar el informe a un tercero: es una acción irreversible."
+    },
+    "approval_request": {
+      "type": "aprobacion_accion_critica",
+      "question": "¿Aprobás enviar informe a direccion@genpet.com.ar?",
+      "action": {
+        "type": "enviar_informe",
+        "recipient": "direccion@genpet.com.ar",
+        "reason": "La consulta pide enviar el informe a un tercero: es una acción irreversible."
+      },
+      "draft": "Las ventas reales acumuladas de enero a septiembre de 2026 alcanzaron un total de $26.761.442, siendo el canal mayorista el principal motor de ingresos. Las metas desglosadas por canal y las ventas del Q4 2026 no se encuentran disponibles.\n\n- Total general de ventas reales (enero a septiembre 2026): $26.761.442\n- Canal Mayorista - Monto: $22.645.544 - Participación: 84,62%\n- Canal WhatsApp - Monto: $3.387.798 - Participación: 12,66%\n- Canal Web - Monto: $728.100 - Participación: 2,72%\n- Meta anual de ingresos netos para 2026: superar los $36.000.000\n- Meta de ingresos netos para Q1 2026: $4.000.000\n- Meta de ingresos netos para Q2 2026: $7.500.000\n- Meta de ingresos netos para Q3 2026: $12.000.000\n- Meta de ingresos netos para Q4 2026: $13.000.000\n\nFuentes: historial_ventas_2026.md, plan_comercial_2026.md",
+      "how_to_resume": "POST /tasks/{job_id}/approve  {\"approved\": true|false, \"reviewer\": \"...\"}"
+    },
+    "approval": {
+      "approved": true,
+      "reviewer": "run_scenarios",
+      "comment": "aprobación de la prueba"
+    },
+    "action_result": {
+      "executed": true,
+      "type": "enviar_informe",
+      "message_id": "1f96ee73f76a4548b1a5f4dc294d0762",
+      "recipient": "direccion@genpet.com.ar",
+      "subject": "Informe GenPet: Prepará un resumen de las ventas por canal de 2026 y enviá el informe a direccio",
+      "sent_at": "2026-10-14T16:39:00+00:00"
+    },
+    "final_answer": "Las ventas reales acumuladas de enero a septiembre de 2026 alcanzaron un total de $26.761.442, siendo el canal mayorista el principal motor de ingresos. Las metas desglosadas por canal y las ventas del Q4 2026 no se encuentran disponibles.\n\n- Total general de ventas reales (enero a septiembre 2026): $26.761.442\n- Canal Mayorista - Monto: $22.645.544 - Participación: 84,62%\n- Canal WhatsApp - Monto: $3.387.798 - Participación: 12,66%\n- Canal Web - Monto: $728.100 - Participación: 2,72%\n- Meta anual de ingresos netos para 2026: superar los $36.000.000\n- Meta de ingresos netos para Q1 2026: $4.000.000\n- Meta de ingresos netos para Q2 2026: $7.500.000\n- Meta de ingresos netos para Q3 2026: $12.000.000\n- Meta de ingresos netos para Q4 2026: $13.000.000\n\nFuentes: historial_ventas_2026.md, plan_comercial_2026.md",
+    "delegations": 2,
+    "flow": [
+      "investigador",
+      "analista",
+      "sintetizador"
+    ],
+    "error": null
+  }
+}

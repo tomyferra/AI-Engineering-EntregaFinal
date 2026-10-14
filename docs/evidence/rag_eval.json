@@ -1,0 +1,31 @@
+{
+  "k": 4,
+  "queries": 30,
+  "weights": {
+    "bm25_weight": 0.2,
+    "vector_weight": 0.8
+  },
+  "rerank_model": "bge-reranker-v2-m3",
+  "results": {
+    "bm25": {
+      "hit_at_k": 0.833,
+      "hit_at_1": 0.6,
+      "mrr": 0.683
+    },
+    "vector": {
+      "hit_at_k": 1.0,
+      "hit_at_1": 1.0,
+      "mrr": 1.0
+    },
+    "hybrid": {
+      "hit_at_k": 1.0,
+      "hit_at_1": 0.933,
+      "mrr": 0.961
+    },
+    "hybrid+rerank": {
+      "hit_at_k": 0.967,
+      "hit_at_1": 0.8,
+      "mrr": 0.875
+    }
+  }
+}

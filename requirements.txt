@@ -1,0 +1,35 @@
+# Python 3.12+ (ver .python-version y Dockerfile). Única fuente de dependencias del proyecto.
+python-dotenv==1.2.4
+pydantic==2.13.5
+
+# Agentes: LangGraph (grafo + checkpointer) y agentes ReAct de LangChain
+langgraph==1.2.14
+langchain==1.4.3
+langchain-core==1.6.7
+langchain-openai==1.6.7
+langchain-anthropic==1.7.5
+langchain-google-genai==4.4.0
+langchain-tavily==0.2.18
+
+# RAG híbrido: BM25 local + Pinecone (cliente asyncio oficial: AsyncPinecone) + numpy (store en memoria)
+rank-bm25==0.2.2
+pinecone==10.0.0
+numpy==2.5.4
+
+# API asíncrona
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+httpx==0.28.1
+
+# Redis: jobs + cola + historial (redis.asyncio) y checkpoints de LangGraph (AsyncRedisSaver)
+redis==8.1.0
+langgraph-checkpoint-redis==0.5.2
+
+# Observabilidad: Arize Phoenix vía OpenTelemetry + OpenInference
+arize-phoenix-otel==0.17.2
+openinference-instrumentation-langchain==0.1.78
+
+# Tests (sin API keys ni Redis real)
+pytest==9.1.1
+pytest-asyncio==1.4.0
+fakeredis==2.39.0
